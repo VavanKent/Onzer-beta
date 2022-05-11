@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ONZER</title>
+    <link rel="stylesheet" href="style_onzer_accueil.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="icon" type="image.png" sizes="20x20" href="./images/logo_ONZER.png">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./images/logo_ONZER12.png"></a>
+        <ul>
+            <li><a href="./Page_travaux.html">Premium</a></li>
+            <li><a href="./Page_travaux.html">Connexion</a></li>
+            <li><a href="./Page_travaux.html">Inscription</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <section class="bannerdiapo">
+        <body>
+          <p>Playlist →</p>
+            <div class="slider">
+                <div class="slides">
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <input type="radio" name="radio-btn" id="radio5">
+                  <input type="radio" name="radio-btn" id="radio6">
+                  <div class="slide first">
+                    <a href="./Page_Rap_FR.html"><img src="./images/Best of RAP FR.png" alt="1"/></a>
+                  </div>
+                  <div class="slide">
+                    <a href="./Page_Rap_US.html"><img src="./images/Best of rap us.png" alt="2"/></a>
+                  </div>
+                  <div class="slide">
+                    <a href="./Page_Rock.html"><img src="./images/Best of ROCK.png" alt="3"/></a>
+                  </div>
+                  <div class="slide">
+                    <a href="./Page_Varietes.html"><img src="./images/Best of variétés.png" alt="4"/></a>
+                  </div>
+                  <div class="slide">
+                    <a href="./Page_Electro.html"><img src="./images/Best of Electro.png" alt="5"/></a>
+                  </div>
+                  <div class="slide">
+                    <a href="./Page_Remix.html"><img src="./images/Best of remix.png" alt="6"/></a>
+                  </div>
+                  <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
+                  </div>
+                </div>
+                <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                  <label for="radio5" class="manual-btn"></label>
+                  <label for="radio6" class="manual-btn"></label>
+                </div>
+              </div>
+              <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                  document.getElementById('radio' + counter).checked = true;
+                  counter++;
+                  if(counter > 6){
+                    counter = 1;
+                  }
+                }, 4000);
+                </script>
+        </body>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Informations</h4>
+            <ul>
+              <li><a href="./Page_travaux.html">Sur nous</a></li>
+              <li><a href="./Page_travaux.html">Nos services</a></li>
+              <li><a href="./Page_travaux.html">politique de confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Besoin d'aide ?</h4>
+            <ul>
+              <li><a href="./Page_travaux.html">FAQ</a></li>
+              <li><a href="./Page_travaux.html">Utilisation</a></li>
+              <li><a href="./Page_travaux.html">Moyen de paiement</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Mentions Légales</h4>
+            <ul>
+              <li><a href="./Page_travaux.html">Musique</a></li>
+              <li><a href="./Page_travaux.html">Album</a></li>
+              <li><a href="./Page_travaux.html">Interprète</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Suivez nous !</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=100081114549091"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com/onzermusic?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </footer>
+</body>
+</html>
